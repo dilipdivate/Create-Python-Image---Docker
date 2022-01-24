@@ -1,0 +1,13 @@
+#Build your image
+$ docker build -t <YOUR_USERNAME>/myfirstapp .
+
+#Run your image
+$ docker run -p 8888:5000 --name myfirstapp YOUR_USERNAME/myfirstapp
+
+#Push your image
+docker login
+docker push YOUR_USERNAME/myfirstapp
+
+$ docker stop myfirstapp
+$ docker rm myfirstapp
+$ docker rm -f myfirstapp
